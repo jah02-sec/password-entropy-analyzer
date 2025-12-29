@@ -33,7 +33,4 @@ The password is analyzed **entirely within the browser** and never leaves the cl
 
 ---
 
-## Entropy Model
-
-The entropy estimation is based on the classical formula:
 
