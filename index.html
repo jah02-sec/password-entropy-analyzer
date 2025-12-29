@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Password Strength Analyser</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Password Input</h1>
+      <p class="lead">Enter your password and use the button to show or hide it.</p>
+
+      <label for="passwordInput" class="visually-hidden">Password</label>
+      <div class="input-row">
+        <input id="passwordInput" type="password" placeholder="Enter your password" aria-describedby="pwHelp" />
+        <button id="toggleBtn" type="button" aria-pressed="false" aria-label="Show password">Show</button>
+      </div>
+      <p id="pwHelp" class="note">Use the button to toggle password visibility.</p>
+
+      <div class="meter" role="progressbar" aria-label="Password strength meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="meter-fill" id="meterFill"></div>
+      </div>
+
+      <div class="feedback-row" aria-live="polite">
+        <p id="strengthFeedback" class="strength weak">Strength: <strong id="strengthText">Weak</strong></p>
+        <p id="entropy" class="entropy">Entropy: <strong id="entropyValue">0.0 bits</strong> <span class="charset">(charset: <strong id="charsetSize">0</strong>)</span></p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
