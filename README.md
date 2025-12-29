@@ -1,5 +1,7 @@
 # Password Entropy Analyzer
 
+**Live Demo:** https://jah02-sec.github.io/password-entropy-analyzer/
+
 A client-side password strength analyzer that estimates password entropy based on length and effective character set size.  
 The tool provides real-time feedback and visualizes password strength without storing or transmitting any data.
 
@@ -30,7 +32,3 @@ The password is analyzed **entirely within the browser** and never leaves the cl
   - common passwords
 - Password visibility toggle
 - Accessible and responsive UI
-
----
-
-
